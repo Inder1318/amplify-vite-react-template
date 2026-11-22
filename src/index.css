@@ -1,1 +1,31 @@
-body { margin: 0; font-family: system-ui, sans-serif; background: #f4f6fa; color: #1b2430; }
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&display=swap");
+
+:root {
+  --ink: #1d2b36;
+  --slate: #2c3e4c;
+  --paper: #f3f5f6;
+  --line: #d3dade;
+  --muted: #5e6e7a;
+  --hivis: #f5c400;
+  --pending: #d98a00;
+  --progress: #1f6fb5;
+  --resolved: #2f8a4f;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Barlow", system-ui, sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+[data-amplify-authenticator] {
+  --amplify-components-button-primary-background-color: #2c3e4c;
+  --amplify-components-button-primary-hover-background-color: #1d2b36;
+  --amplify-components-tabs-item-active-border-color: #f5c400;
+  --amplify-components-tabs-item-active-color: #1d2b36;
+  --amplify-components-tabs-item-color: #5e6e7a;
+}
