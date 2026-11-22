@@ -1,42 +1,16 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
+.app { max-width: 760px; margin: 0 auto; padding: 16px; }
+.row { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+header { border-bottom: 2px solid #1f3a5f; margin-bottom: 12px; }
+h1 { color: #1f3a5f; margin: 8px 0; }
+nav { display: flex; gap: 8px; margin-bottom: 12px; }
+button { padding: 6px 12px; border: 1px solid #1f3a5f; background: #fff; color: #1f3a5f; border-radius: 6px; cursor: pointer; }
+button.active { background: #1f3a5f; color: #fff; }
+.card { background: #fff; border: 1px solid #d5dce6; border-radius: 8px; padding: 12px; margin-bottom: 10px; }
+.muted { color: #6b7685; font-size: 14px; }
+.form { display: flex; flex-direction: column; gap: 6px; }
+.form input, .form select, .form textarea { padding: 8px; border: 1px solid #c3ccd8; border-radius: 6px; }
+.error { color: #b3261e; }
+.badge { padding: 2px 10px; border-radius: 12px; font-size: 13px; color: #fff; }
+.badge.pending { background: #c77700; }
+.badge.in-progress { background: #1565c0; }
+.badge.resolved { background: #2e7d32; }
