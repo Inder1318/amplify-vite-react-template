@@ -30,7 +30,7 @@ function useComplaints() {
   return [...items].sort((a, b) => b.createdAt.localeCompare(a.createdAt));
 }
 
-function Badge({ status }: { status: string | null }) {
+function Badge({ status }: { status?: string | null }) {
   const s = status ?? "Pending";
   return (
     <span className={"badge " + s.replace(" ", "-").toLowerCase()}>{s}</span>
